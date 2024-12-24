@@ -60,7 +60,7 @@ Put the tracking datasets in ./data. It should look like this:
 
 
 ## Training
-Download pre-trained [MAE ViT-Base weights](https://dl.fbaipublicfiles.com/mae/pretrain/mae_pretrain_vit_base.pth) and put it under `$PROJECT_ROOT$/pretrained_models` (different pretrained models can also be used, see [MAE](https://github.com/facebookresearch/mae) for more details).
+Download pre-trained [MAE ViT-Base weights](https://drive.google.com/file/d/1DlkoZrgzxJ6bupvwoTrCt8binSOg04Up/view?usp=drive_link) and put it under `$PROJECT_ROOT$/pretrained_models` (different pretrained models can also be used, see [MAE](https://github.com/facebookresearch/mae) for more details).
 
 ```
 python tracking/train.py --script seatrack --config vitb_mae_ea_32x4_ep350 --save_dir ./output --mode multiple --nproc_per_node 4 --use_wandb 1
