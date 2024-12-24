@@ -76,3 +76,12 @@ Replace `--config` with the desired model config under `experiments/ostrack`. We
 - **Training**: For `dataset_name` dataset: 
   ```bash
   python -m torch.distributed.launch --nproc_per_node=2 --master_port 12345 main.py --dataset dataset_name --cfg configs/res50_cels_cal.yaml --gpu 0,1 --spr 0 --sacr 0.05 --rr 1.0
+## Test FLOPs, and Speed
+*Note:* The speeds reported in our paper were tested on a single RTX2080Ti GPU.
+
+```
+# Profiling vitb_256_mae_ce_32x4_ep300
+python tracking/profile_model.py --script ostrack --config vitb_256_mae_ce_32x4_ep300
+# Profiling vitb_384_mae_ce_32x4_ep300
+python tracking/profile_model.py --script ostrack --config vitb_384_mae_ce_32x4_ep300
+```
