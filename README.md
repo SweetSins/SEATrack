@@ -14,7 +14,7 @@ bash install.sh
 
 **Option2**: Use the Anaconda (CUDA 11.3)
 ```
-conda env create -f seatrack_cuda113_env.yaml
+conda env create -f env.yaml
 ```
 
 **Option3**: Use the docker file
