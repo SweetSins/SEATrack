@@ -1,5 +1,3 @@
-# README
-
 ## Introduction
 - The code for our SEATrack
 
