@@ -3,8 +3,6 @@
 ## Introduction
 - The code for our SEATrack
 
-## How to get the data:
-- Download the pre-processed datasets that we used from the [link](password: dg1a) and unzip them to `./datasets` folders.
 
 ## Install the environment
 **Option1**: Use the Anaconda (CUDA 10.2)
